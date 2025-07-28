@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,6 +46,40 @@
     .map-button a:hover {
       background-color: #1a242f;
     }
+    .form-section {
+      margin-top: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.75rem;
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1a242f;
+    }
+    .qr-section {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .qr-section img {
+      width: 200px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -64,26 +97,42 @@
   <main>
     <section class="about">
       <h2>Royal Boys Hostel</h2>
-      <p>Royal Boys Hostel is located near Geeta Nagar Metro Station, close to Chapeda Pulia Chauraha. Managed by Sunny, the hostel provides peaceful and homely accommodation for students.</p>
+      <p>Royal Boys Hostel is located near Geeta Nagar Metro Station, close to Chapeda Pulia Chauraha. Managed by Sunny, the hostel provides peaceful and homely accommodation for students.</p><img src="images/hostel_front.jpg" alt="Royal Boys Hostel front view" />
 
-      <img src="images/hostel_front.jpg" alt="Royal Boys Hostel front view" />
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.386212580705!2d80.317909!3d26.863190!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3873f9b671d1%3A0xd8b6bcf96a2c76b7!2sRoyal%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1722161234567" 
+    width="100%" 
+    height="300" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
 
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.386212580705!2d80.317909!3d26.863190!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3873f9b671d1%3A0xd8b6bcf96a2c76b7!2sRoyal%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1722161234567" 
-        width="100%" 
-        height="300" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+  <div class="map-button">
+    <a href="https://maps.app.goo.gl/LuSHMJFh8w1afKDt8?g_st=aw" target="_blank">📍 Open in Google Maps</a>
+    <a href="tel:+918317044188" style="background-color: #27ae60;">📞 Call Now</a>
+    <a href="https://wa.me/918317044188" style="background-color: #25d366;">💬 WhatsApp Inquiry</a>
+  </div>
 
-      <div class="map-button">
-        <a href="https://maps.app.goo.gl/LuSHMJFh8w1afKDt8?g_st=aw" target="_blank">📍 Open in Google Maps</a>
-        <a href="tel:+918317044188" style="background-color: #27ae60;">📞 Call Now</a>
-        <a href="https://wa.me/918317044188" style="background-color: #25d366;">💬 WhatsApp Inquiry</a>
-      </div>
-    </section>
+  <section class="form-section">
+    <h3>Online Booking / Enquiry</h3>
+    <form action="mailto:your@email.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="phone" placeholder="Your Phone Number" required />
+      <textarea name="message" placeholder="Your Enquiry or Booking Request" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <div class="qr-section">
+    <h3>Scan to Pay (Booking)</h3>
+    <img src="images/qr.png" alt="Payment QR Code">
+  </div>
+
+</section>
+
   </main>
   <footer>
     <p>&copy; 2025 Royal Boys Hostel. All rights reserved.</p>
